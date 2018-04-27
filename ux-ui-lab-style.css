@@ -1,0 +1,142 @@
+
+/*Mobile design*/
+
+body {
+  background-color: black;
+  color: green;
+  font-family: 'Orbitron', sans-serif;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  padding: 3px;
+  font-size: 27px;
+
+}
+
+nav {
+  display: none;
+  font-weight: bold;
+  flex-direction: column;
+
+
+}
+
+li {
+  list-style-type: none;
+  margin: 10px 0px;
+}
+
+.options {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-start;
+  padding: 10px;
+}
+
+ h5 {
+  margin: 10px;
+}
+
+
+ h3 {
+   color: #8DCEE4 /*cool blue*/
+ }
+
+.main-image {
+  height: 493px;
+  width: 877px;
+  display: flex;
+  justify-content: center;
+}
+
+.c-s-imgs {
+  display: flex;
+  flex-direction: column;
+}
+
+.mobile-button {
+  width: 35px;
+  height: 5px;
+  background-color: green;
+  margin: 3px 0;
+}
+
+.coming-soon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+}
+
+.new-titles {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+
+}
+
+.leaving-soon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+}
+
+.main-image {
+  height: auto;
+  width: auto;
+  overflow: hidden;
+}
+
+/*Desktop design*/
+
+@media screen and (min-width: 992px) {
+
+  .mobile-button {
+    display: none;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0px 15px;
+  }
+
+  ul {
+    flex-direction: row;
+    margin: 5px;
+  }
+
+  li {
+    margin: 5px 0px;
+    padding: 25px;
+    justify-content: space-around;
+    list-style-type: none;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  h1 {
+    font-size: 40px;
+    margin-left: 10px;
+    margin-top: 10px;
+  }
+
+  h5 {
+    font-size: 18px;
+  }
+
+  .main-image {
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+    width: auto;
+  }
+
+}
